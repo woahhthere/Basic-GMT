@@ -125,7 +125,8 @@
 }
 /* HEADER  */
 .header{
-    background:var(--dark);
+    background:transparent;
+    padding:2rem;
     position:relative;
     position:fixed;
     width:100%;
@@ -238,6 +239,13 @@
     transition:.6s ease;
 }
 
+/* BANNER */
+.banner{
+  background-image:url("/img/banner_home_v1.jpg");
+  backround-size:cover;
+  height:100vh;
+  background-position:center center;
+}
 
 
 
