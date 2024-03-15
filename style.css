@@ -194,7 +194,7 @@
 /* HEADER MOBILE */
 @media screen and (max-width:520px){
   .header_nav{
-    background:plum;
+    background:rgb(85, 73, 85);
     position:absolute;
     top:0rem;
     right:-100rem;
@@ -254,7 +254,7 @@
   background:var(--light);
   width:fit-content;
   padding:2.5rem 4rem;
-  border-top-left-radius:4rem;
+  border-top-left-radius:5rem;
   position:absolute;
   bottom:0;
   right:0;
@@ -366,4 +366,78 @@
   color:var(--primary);
   font-size:1.5rem;
   font-weight:600;
+}
+
+/* OFFER */
+.offer{
+  background-size:cover;
+  height:70vh;
+  background-position:center center;
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.offer__wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.offer__text{
+  max-width:65rem;
+  display:flex;
+  flex-direction:column;
+  gap:4rem;
+  font-weight:600;
+}
+  .offer__text a{
+    background:var(--primary);
+  width:fit-content;
+  padding:1rem 2rem;
+  border-radius:5rem;
+  color:var(--light);
+  transition:.5s ease;
+  }
+  .offer__text a:hover{
+    background:var(--dark);
+    transition:.5s ease;
+  }
+
+.offer__text h2{
+  font-size:5rem;
+  color:var(--primary);
+  font-weight:700;
+}
+.offer__price h3{
+  max-width:65rem;
+font-size:4.5rem;
+  font-weight:600;
+  color: rgb(221, 140, 47)
+}
+.offer__price h4:first-child{
+  max-width:65rem;
+font-size:3.7rem;
+  font-weight:600;
+  color: #134A8C;
+}
+  .offer__price{
+    align-content:end;
+  }
+@media screen and (max-width:520px){
+  .offer__text h2{
+    font-size:4rem;
+    text-align:center;
+  }
+  .offer__text p{
+    font-size:1.5rem;
+    font-weight:600;
+    text-align:center;
+  }
+  .offer__text a{
+    display:flex;
+    flex-direction:column;
+    text-align:center
+  }
+  .offer__price{
+    justify-content:center;
+  }
 }
